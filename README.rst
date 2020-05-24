@@ -48,7 +48,7 @@ Specification (what in input becomes what in output?)
 -----------------------------------------------------
 Read the `specification`_.
 
-.. _SPECIFICATION: https://github.com/VivekShrikhande/json-flat/blob/master/SPECIFICATION.rst
+.. _SPECIFICATION: https://github.com/vivek-shrikhande/json-flat/blob/master/SPECIFICATION.rst
 
 Footnotes
 ---------
