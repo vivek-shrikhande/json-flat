@@ -1,13 +1,9 @@
 """Module responsible for flattening the input json."""
 
-import logging
 from functools import reduce
 from itertools import zip_longest
 
 from .field import Field
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 
 class JsonFlat:
@@ -18,7 +14,6 @@ class JsonFlat:
         self._root_element_name = root_element_name
 
     def _a_flat(self, input_rows, fields=None, key_so_far=None):
-        # logger.info(f'ARRAY => {key_so_far}')
         if fields is None:
             fields = Field(False)
 
@@ -44,14 +39,12 @@ class JsonFlat:
                                                 key_so_far)[-1])
 
             else:
-                # logger.info(f'PRIMITIVE => {absolute_key} = {input_row}')
                 output_rows.append({absolute_key: input_row})
                 fields.set_self()
 
         return fields, output_rows
 
     def _o_flat(self, input_row, fields=None, key_so_far=None):
-        # logger.info(f'OBJECT => {key_so_far}')
         output_row, lol = dict(), list()
 
         if fields is None:
@@ -84,7 +77,6 @@ class JsonFlat:
                     output_row[absolute_key] = None
 
             else:
-                # logger.info(f'PRIMITIVE => {absolute_key} = {v}')
                 output_row[absolute_key] = v
                 fields.set_field(k)
 
