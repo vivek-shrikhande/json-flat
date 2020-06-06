@@ -53,5 +53,5 @@ Read the `specification <https://github.com/vivek-shrikhande/json-flat/blob/mast
 
 Footnotes
 ---------
-.. [1] No native functionality in the library to get csv. Use Python’s built in module ``csv`` on the flattened data.
-.. [2] To be specific, Elasticsearch is a search engine, MongoDB is a database and BigQuery is a data warehouse. For simplicity, all of these are considered to be json document stores or simply databases. Defining what these applications exactly are isn’t the goal of this documentation.
+.. [1] No native functionality in the library to get csv. Use Python's built in module ``csv`` on the flattened data.
+.. [2] To be specific, Elasticsearch is a search engine, MongoDB is a database and BigQuery is a data warehouse. For simplicity, all of these are considered to be json document stores or simply databases. Defining what these applications exactly are isn't the goal of this documentation.

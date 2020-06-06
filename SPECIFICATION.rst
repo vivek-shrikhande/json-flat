@@ -107,7 +107,7 @@ The conversion process is called flattening in the context of this library. Ther
 
     Here, the person has the nested ``address`` array (each array element being an ``address`` object). Looking at the data, we can say that the person has two addresses. Hence, when we flatten it, we get two rows (corresponding to two addresses) in the output both of which have the same name but different addresses. Hence, object-array is a one-to-many relation. So is array-object relation.
 
-For the array-array relation (redundant relation) let’s consider the following example (student book list),
+For the array-array relation (redundant relation) let's consider the following example (student book list),
 
 .. code-block:: json
 
@@ -122,6 +122,6 @@ For the array-array relation (redundant relation) let’s consider the following
         "Data structures and algorithms",
     ]
 
-``"Java"``, ``"Python"`` and ``"Go"`` are grouped into an array as they are all books on programming languages. But all the books belong to the same student book list. Hence, it’s a one-to-one relation. When you flatten this data, the information of grouping ``"Java"``, ``"Python"`` and ``"Go"`` is lost.
+``"Java"``, ``"Python"`` and ``"Go"`` are grouped into an array as they are all books on programming languages. But all the books belong to the same student book list. Hence, it's a one-to-one relation. When you flatten this data, the information of grouping ``"Java"``, ``"Python"`` and ``"Go"`` is lost.
 
 As a general rule, one-to-one relations will produce a single child row in the parent whereas one-to-many will produce many child rows in the parent.
