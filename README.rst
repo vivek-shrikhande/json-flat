@@ -1,6 +1,8 @@
 json-flat
 =========
-A Python library to flatten a nested json. 
+A Python library to flatten a nested json.
+
+(Try out online at https://vivek-shrikhande.github.io/json-to-csv-web-app)
 
 Use cases
 ---------
